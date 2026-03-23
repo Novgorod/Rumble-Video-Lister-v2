@@ -1,4 +1,4 @@
-# Rumble Video Lister
+# Rumble Video Lister v2
 
 This is a substantially improved version of the [previous](https://github.com/Novgorod/Rumble-Video-Lister) Rumble research tool for metadata listing of all publicly accessible video IDs including unlisted and anonymized / embed-only (posted by "hostid1") videos. The tool performs a multi-threaded scan of the sequential video IDs posted within a user-defined time window by using the efficient oEmbed JSON API and checking only even video IDs (odd IDs are not used by Rumble). The efficiency improvements over the old version allow scanning up to 100 video IDs per second (depending on the latency of the internet connection) while generating only 10% of the web traffic.
 
