@@ -17,13 +17,15 @@ The user can now list video metadata between a user-defined starting and ending 
 
 The scan can be optionally logged to a text file and is automatically stopped as soon as an optionally provided keyword is detected in the video title or channel name. The scan always starts from the starting timestamp, even if the ending timestamp predates it, in which case the scan is performed in reverse.
 
+## Required software / packages
+
+- Labview 2023 or later (e.g., the free [community edition](https://www.ni.com/en/support/downloads/software-products/download.labview-community.html))
+- [JSONtext](https://www.ni.com/de/support/downloads/tools-network/download.jsontext.html) add-on (can be also installed through [VI Package Manager](https://www.vipm.io))
+
 ## Usage
 
-Labview 2023 or later is required to view and run the code. You can use the free [community edition](https://www.ni.com/en/support/downloads/software-products/download.labview-community.html). It should run on all supported Labview platforms, but it was only tested on Windows. Clone / download the repo, then open and run the "Rumble lister v2.vi". Enter a "Start time" and "Stop time", choose a path for the log file (leave blank if not needed) and press "SCAN". The scan is stopped when the keyword is found in the title or channel name, which is marked in the listing log. If the keyword is blank, the entire time window is scanned. The keyword can be changed during the scan. Depending on the number of CPU cores / threads and internet connection speed, the performance may be improved by changing the "Threads" number from the default value. Note that the metadata list is not strictly sorted by video ID, since it is generated live from the multi-threaded scan. Consecutive video IDs can be separated by up to the number of threads.
+The code should run on all supported Labview platforms, but it was only tested on Windows. Clone / download the repo, then open and run the "Rumble lister v2.vi". Enter a "Start time" and "Stop time", choose a path for the log file (leave blank if not needed) and press "SCAN". The scan is stopped when the keyword is found in the title or channel name, which is marked in the listing log. If the keyword is blank, the entire time window is scanned. The keyword can be changed during the scan. Depending on the number of CPU cores / threads and internet connection speed, the performance may be improved by changing the "Threads" number from the default value. Note that the metadata list is not strictly sorted by video ID, since it is generated live from the multi-threaded scan. Consecutive video IDs can be separated by up to the number of threads.
 
-## Required packages
-
-- [JSONtext](https://www.ni.com/de/support/downloads/tools-network/download.jsontext.html) (can be also installed through [VI Package Manager](https://www.vipm.io))
 
 ## Building
 
