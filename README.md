@@ -20,3 +20,7 @@ The scan can be optionally logged to a text file and the scan is automatically s
 ## Usage
 
 Labview 2023 or later is required to view and run the code. You can use the free [community edition](https://www.ni.com/en/support/downloads/software-products/download.labview-community.html). It should run on all supported Labview platforms, but it was only tested on Windows. Clone / download the repo, then open and run the "Rumble lister v2.vi". Enter a "Start time" and "Stop time", choose a path for the log file (leave blank if not needed) and press "SCAN". The scan is stopped when the keyword is found in the title or channel name, which is marked in the listing log. If the keyword is blank, the entire time window is scanned. The keyword can be changed during the scan. Depending on the number of CPU cores / threads and internet connection speed, the performance may be improved by changing the "Threads" number from the default value. Note that the metadata list is not strictly sorted by video ID, since it is generated live from the multi-threaded scan. Consecutive video IDs can be separated by up to the number of threads.
+
+## Building
+
+The repository contains a Labview project file with a build specification for a standalone executable on Windows (.exe). Verify the correct paths in the build specification, (re-)save the project file to create the .aliases file, and build the specification. Building standalone applications requires the full Labview development environment.
