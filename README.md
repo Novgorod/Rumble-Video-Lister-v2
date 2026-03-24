@@ -20,7 +20,7 @@ The scan can be optionally logged to a text file and is automatically stopped as
 ## Required software / packages
 
 - Labview 2023 or later (e.g., the free [community edition](https://www.ni.com/en/support/downloads/software-products/download.labview-community.html))
-- [JSONtext](https://www.ni.com/de/support/downloads/tools-network/download.jsontext.html) add-on (can be also installed through [VI Package Manager](https://www.vipm.io))
+- [JSONtext](https://www.ni.com/en/support/downloads/tools-network/download.jsontext.html) add-on (can be also installed through [VI Package Manager](https://www.vipm.io))
 
 ## Usage
 
