@@ -7,8 +7,8 @@ This is a substantially improved version of the [previous](https://github.com/No
 ## Features
 
 The tool displays a metadata list of discovered videos, which can be optionally logged to a text file. Anonymized videos do not have descriptive metadata (title and channel name) and are embed-only, i.e., only accessible through their embed URL. The collected metadata includes:
-- Timestamp (either the time of the upload or the scheduled publication time; currently running livestreams are marked as "LIVE")
-- Video duration
+- Timestamp (either the time of the upload or the scheduled publication time)
+- Video duration (currently running livestreams are marked as "LIVE")
 - Channel name (for anonymized videos "hostid1")
 - Title (for anonymized videos this only includes a sequential numeric ID)
 - Canonical video URL (for anonymized videos the embed URL, since the canonical URL appears as private)
