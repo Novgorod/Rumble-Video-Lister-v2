@@ -17,6 +17,10 @@ The user can now list video metadata between a user-defined starting and ending 
 
 The scan can be optionally logged to a text file and is automatically stopped as soon as an optionally provided keyword is detected in the video title or channel name. The scan always starts from the starting timestamp, even if the ending timestamp predates it, in which case the scan is performed in reverse.
 
+### Update 07/2026
+
+Rumble now enforces tight rate limits for anonymous requests on the embed API and bans your IP (with a Cloudflare auth challenge) for a few minutes if you exceed the limit. 4 parallel threads on a low-latency connection seems to be currently the maximum which is still safely within the rate limit. Your maximum thread number may vary based on your connection speed, latency, and processing power. If you keep getting HTTP 429 errors (too many requests), wait some minutes for the IP ban to cool down and try lowering the thread number.
+
 ## Required software / packages
 
 - Labview 2023 or later (e.g., the free [community edition](https://www.ni.com/en/support/downloads/software-products/download.labview-community.html))
